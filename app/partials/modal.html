@@ -1,0 +1,94 @@
+<ion-modal-view class="slide-modal">
+    <h1 class="title">My Modal title</h1>
+    <div class="buttons primary-buttons">
+  <ion-header-bar>
+    <button class="button"
+      ng-click="slide.previous()"
+      ng-disabled="slide.isFirst()">
+      Prev
+    </button>
+    <button class="button"
+      ng-click="slide.next()"
+      ng-disabled="slide.isLast()">
+      Next
+    </button>
+  </ion-header-bar>
+  <ion-content>
+    <ion-slide-box show-pager="false">
+      <ion-slide>
+        <label class="item item-input">
+          <input type="text" ng-model="typeFilter" placeholder="Filter">
+        </label>
+        <ion-list>
+          <label class="item item-icon-right"
+            ng-repeat="item in someData.type.items | filter:typeFilter">
+            <input type="radio"
+              ng-value="item"
+              ng-model="someData.choice.type"
+              ng-change="change('kind')">
+              {{item.name}}
+            <span class="icon"
+              ng-class="isEqual(item, someData.choice.type) ?
+              'ion-ios7-checkmark-outline balanced' :
+              'ion-ios7-circle-outline'"></span>
+          </label>
+        </ion-list>
+      </ion-slide>
+      <ion-slide>
+        <label class="item item-input">
+          <input type="text" ng-model="kindFilter" placeholder="Filter">
+        </label>
+        <ion-list>
+          <ion-list>
+            <label class="item item-icon-right"
+              ng-repeat="item in someData.kind.items |
+                filter:{type: someData.choice.type._id} |
+                filter:kindFilter">
+              <input type="radio"
+                ng-value="item"
+                ng-model="someData.choice.kind"
+                ng-change="change('detail')">
+                {{item.name}}
+              <span class="icon"
+                ng-class="isEqual(item, someData.choice.kind) ?
+                'ion-ios7-checkmark-outline balanced' :
+                'ion-ios7-circle-outline'"></span>
+            </label>
+        </ion-list>
+      </ion-slide>
+      <ion-slide>
+        <label class="item item-input">
+          <input type="text" ng-model="detailFilter" placeholder="Filter">
+        </label>
+        <ion-list>
+          <ion-list>
+            <label class="item item-icon-right"
+              ng-repeat="item in someData.detail.items |
+                filter:{kind: someData.choice.kind._id} |
+                filter:detailFilter">
+              <input type="radio"
+                ng-value="item"
+                ng-model="someData.choice.detail">
+                {{item.name}}
+              <span class="icon"
+                ng-class="isEqual(item, someData.choice.detail) ?
+                'ion-ios7-checkmark-outline balanced' :
+                'ion-ios7-circle-outline'"></span>
+            </label>
+        </ion-list>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+  <ion-footer-bar>
+      <button class="button button-assertive"
+        ng-click="closeModal()">
+        Close
+      </button>
+      <button class="button button-balanced"
+        ng-disabled="!allFilled()"
+        ng-click="closeModal()">
+        Accept
+      </button>
+    </div>
+  </ion-footer-bar>
+</ion-modal-view>

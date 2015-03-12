@@ -1,0 +1,183 @@
+{
+  "type": {
+    "count": 4,
+    "items": [
+      {
+        "name": "Fruits",
+        "_id": 0
+      },
+      {
+        "name": "Vegetables",
+        "_id": 1
+      },
+      {
+        "name": "Meats",
+        "_id": 2
+      },
+      {
+        "name": "Cheeses",
+        "_id": 3
+      }
+    ]
+  },
+  "kind": {
+    "count": 13,
+    "items": [
+      {
+        "name": "Apple",
+        "_id": 0,
+        "type": 0
+      },
+      {
+        "name": "Banana",
+        "_id": 1,
+        "type": 0
+      },
+      {
+        "name": "Cherry",
+        "_id": 2,
+        "type": 0
+      },
+      {
+        "name": "Strawberry",
+        "_id": 3,
+        "type": 0
+      },
+      {
+        "name": "Beans",
+        "_id": 4,
+        "type": 1
+      },
+      {
+        "name": "Paprika",
+        "_id": 5,
+        "type": 1
+      },
+      {
+        "name": "Cucumber",
+        "_id": 6,
+        "type": 1
+      },
+      {
+        "name": "Carrots",
+        "_id": 7,
+        "type": 1
+      },
+      {
+        "name": "Beef",
+        "_id": 8,
+        "type": 2
+      },
+      {
+        "name": "Pork",
+        "_id": 9,
+        "type": 2
+      },
+      {
+        "name": "Poultry",
+        "_id": 10,
+        "type": 2
+      },
+      {
+        "name": "Hard Cheese",
+        "_id": 11,
+        "type": 3
+      },
+      {
+        "name": "Soft Cheese",
+        "_id": 12,
+        "type": 3
+      },
+      {
+        "name": "Cream Cheese",
+        "_id": 13,
+        "type": 3
+      }
+    ]
+  },
+  "detail": {
+    "count": 10,
+    "items": [
+      {
+        "name": "Pink Lady",
+        "_id": 0,
+        "kind": 0
+      },
+      {
+        "name": "Granny Smith",
+        "_id": 1,
+        "kind": 0
+      },
+      {
+        "name": "Chiquita",
+        "_id": 2,
+        "kind": 1
+      },
+      {
+        "name": "Mon Cheri",
+        "_id": 3,
+        "kind": 2
+      },
+      {
+        "name": "A big red one",
+        "_id": 4,
+        "kind": 3
+      },
+      {
+        "name": "French bean",
+        "_id": 5,
+        "kind": 4
+      },
+      {
+        "name": "Hunagarian pointed pepper",
+        "_id": 6,
+        "kind": 5
+      },
+      {
+        "name": "pickled cucumber",
+        "_id": 7,
+        "kind": 6
+      },
+      {
+        "name": "Yellow Carrot",
+        "_id": 8,
+        "kind": 7
+      },
+      {
+        "name": "Roastbeef",
+        "_id": 9,
+        "kind": 8
+      },
+      {
+        "name": "Filet",
+        "_id": 10,
+        "kind": 8
+      },
+      {
+        "name": "Steak",
+        "_id": 11,
+        "kind": 9
+      },
+      {
+        "name": "Turkey",
+        "_id": 12,
+        "kind": 10
+      },
+      {
+        "name": "Parmesan",
+        "_id": 13,
+        "kind": 11
+      },
+      {
+        "name": "Camembert",
+        "_id": 14,
+        "kind": 12
+      },
+      {
+        "name": "Almette",
+        "_id": 15,
+        "kind": 13
+      }
+    ]
+  }
+}

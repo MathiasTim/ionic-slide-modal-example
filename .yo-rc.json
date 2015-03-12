@@ -1,0 +1,23 @@
+{
+  "generator-m": {
+    "answers": {
+      "appName": "SlideModal",
+      "appId": "com.mway.slidemodal",
+      "bowerPackages": [
+        "angular-localForage#~0.2.10",
+        "angular-touch#~1.2.25"
+      ],
+      "ionicSass": true,
+      "stableVersions": true,
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "plugins": [
+        "org.apache.cordova.device"
+      ],
+      "appModule": "slidemodal",
+      "includeSass": true
+    }
+  }
+}
